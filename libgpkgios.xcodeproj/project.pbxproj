@@ -1,653 +1,1947 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		56084F1A1C9A435A0020CDA4 /* libgpkgios.h in Headers */ = {isa = PBXBuildFile; fileRef = 56084F191C9A435A0020CDA4 /* libgpkgios.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		56084F211C9A435B0020CDA4 /* libgpkgios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56084F161C9A435A0020CDA4 /* libgpkgios.framework */; };
-		56084F261C9A435B0020CDA4 /* libgpkgiosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 56084F251C9A435B0020CDA4 /* libgpkgiosTests.m */; };
-		56084F641C9A44AB0020CDA4 /* atomic_ops.h in Headers */ = {isa = PBXBuildFile; fileRef = 56084F381C9A44AB0020CDA4 /* atomic_ops.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		56084F651C9A44AB0020CDA4 /* binstream.c in Sources */ = {isa = PBXBuildFile; fileRef = 56084F391C9A44AB0020CDA4 /* binstream.c */; settings = {COMPILER_FLAGS = "-w"; }; };
-		56084F661C9A44AB0020CDA4 /* binstream.h in Headers */ = {isa = PBXBuildFile; fileRef = 56084F3A1C9A44AB0020CDA4 /* binstream.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		56084F671C9A44AB0020CDA4 /* blobio.c in Sources */ = {isa = PBXBuildFile; fileRef = 56084F3B1C9A44AB0020CDA4 /* blobio.c */; settings = {COMPILER_FLAGS = "-w"; }; };
-		56084F681C9A44AB0020CDA4 /* blobio.h in Headers */ = {isa = PBXBuildFile; fileRef = 56084F3C1C9A44AB0020CDA4 /* blobio.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		56084F691C9A44AB0020CDA4 /* boost_geom_func.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 56084F3D1C9A44AB0020CDA4 /* boost_geom_func.cpp */; settings = {COMPILER_FLAGS = "-w"; }; };
-		56084F6A1C9A44AB0020CDA4 /* boost_geom_io.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 56084F3E1C9A44AB0020CDA4 /* boost_geom_io.cpp */; settings = {COMPILER_FLAGS = "-w"; }; };
-		56084F6B1C9A44AB0020CDA4 /* boost_geom_io.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 56084F3F1C9A44AB0020CDA4 /* boost_geom_io.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
-		56084F6C1C9A44AB0020CDA4 /* boost_geom_wrapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 56084F401C9A44AB0020CDA4 /* boost_geom_wrapper.cpp */; settings = {COMPILER_FLAGS = "-w"; }; };
-		56084F6D1C9A44AB0020CDA4 /* boost_geom_wrapper.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 56084F411C9A44AB0020CDA4 /* boost_geom_wrapper.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
-		56084F6E1C9A44AB0020CDA4 /* boost_geometries.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 56084F421C9A44AB0020CDA4 /* boost_geometries.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
-		56084F6F1C9A44AB0020CDA4 /* dynlib.h in Headers */ = {isa = PBXBuildFile; fileRef = 56084F431C9A44AB0020CDA4 /* dynlib.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		56084F701C9A44AB0020CDA4 /* error.c in Sources */ = {isa = PBXBuildFile; fileRef = 56084F441C9A44AB0020CDA4 /* error.c */; settings = {COMPILER_FLAGS = "-w"; }; };
-		56084F711C9A44AB0020CDA4 /* error.h in Headers */ = {isa = PBXBuildFile; fileRef = 56084F451C9A44AB0020CDA4 /* error.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		56084F721C9A44AB0020CDA4 /* fp.c in Sources */ = {isa = PBXBuildFile; fileRef = 56084F461C9A44AB0020CDA4 /* fp.c */; settings = {COMPILER_FLAGS = "-w"; }; };
-		56084F731C9A44AB0020CDA4 /* fp.h in Headers */ = {isa = PBXBuildFile; fileRef = 56084F471C9A44AB0020CDA4 /* fp.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		56084F741C9A44AB0020CDA4 /* geom_func.h in Headers */ = {isa = PBXBuildFile; fileRef = 56084F481C9A44AB0020CDA4 /* geom_func.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		56084F751C9A44AB0020CDA4 /* geomio.c in Sources */ = {isa = PBXBuildFile; fileRef = 56084F491C9A44AB0020CDA4 /* geomio.c */; settings = {COMPILER_FLAGS = "-w"; }; };
-		56084F761C9A44AB0020CDA4 /* geomio.h in Headers */ = {isa = PBXBuildFile; fileRef = 56084F4A1C9A44AB0020CDA4 /* geomio.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		56084F771C9A44AB0020CDA4 /* gpkg_db.c in Sources */ = {isa = PBXBuildFile; fileRef = 56084F4B1C9A44AB0020CDA4 /* gpkg_db.c */; settings = {COMPILER_FLAGS = "-w"; }; };
-		56084F781C9A44AB0020CDA4 /* gpkg_geom.c in Sources */ = {isa = PBXBuildFile; fileRef = 56084F4C1C9A44AB0020CDA4 /* gpkg_geom.c */; settings = {COMPILER_FLAGS = "-w"; }; };
-		56084F791C9A44AB0020CDA4 /* gpkg_geom.h in Headers */ = {isa = PBXBuildFile; fileRef = 56084F4D1C9A44AB0020CDA4 /* gpkg_geom.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		56084F7A1C9A44AB0020CDA4 /* gpkg.c in Sources */ = {isa = PBXBuildFile; fileRef = 56084F4E1C9A44AB0020CDA4 /* gpkg.c */; settings = {COMPILER_FLAGS = "-w"; }; };
-		56084F7B1C9A44AB0020CDA4 /* gpkg.h in Headers */ = {isa = PBXBuildFile; fileRef = 56084F4F1C9A44AB0020CDA4 /* gpkg.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		56084F7C1C9A44AB0020CDA4 /* i18n.c in Sources */ = {isa = PBXBuildFile; fileRef = 56084F501C9A44AB0020CDA4 /* i18n.c */; settings = {COMPILER_FLAGS = "-w"; }; };
-		56084F7D1C9A44AB0020CDA4 /* i18n.h in Headers */ = {isa = PBXBuildFile; fileRef = 56084F511C9A44AB0020CDA4 /* i18n.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		56084F7E1C9A44AB0020CDA4 /* spatialdb_internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 56084F521C9A44AB0020CDA4 /* spatialdb_internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		56084F7F1C9A44AB0020CDA4 /* spatialdb.c in Sources */ = {isa = PBXBuildFile; fileRef = 56084F531C9A44AB0020CDA4 /* spatialdb.c */; settings = {COMPILER_FLAGS = "-w"; }; };
-		56084F801C9A44AB0020CDA4 /* spatialdb.h in Headers */ = {isa = PBXBuildFile; fileRef = 56084F541C9A44AB0020CDA4 /* spatialdb.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		56084F811C9A44AB0020CDA4 /* spl_db.c in Sources */ = {isa = PBXBuildFile; fileRef = 56084F551C9A44AB0020CDA4 /* spl_db.c */; settings = {COMPILER_FLAGS = "-w"; }; };
-		56084F821C9A44AB0020CDA4 /* spl_geom.c in Sources */ = {isa = PBXBuildFile; fileRef = 56084F561C9A44AB0020CDA4 /* spl_geom.c */; settings = {COMPILER_FLAGS = "-w"; }; };
-		56084F831C9A44AB0020CDA4 /* spl_geom.h in Headers */ = {isa = PBXBuildFile; fileRef = 56084F571C9A44AB0020CDA4 /* spl_geom.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		56084F841C9A44AB0020CDA4 /* sql.c in Sources */ = {isa = PBXBuildFile; fileRef = 56084F581C9A44AB0020CDA4 /* sql.c */; settings = {COMPILER_FLAGS = "-w"; }; };
-		56084F851C9A44AB0020CDA4 /* sql.h in Headers */ = {isa = PBXBuildFile; fileRef = 56084F591C9A44AB0020CDA4 /* sql.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		56084F861C9A44AB0020CDA4 /* sqlite.h in Headers */ = {isa = PBXBuildFile; fileRef = 56084F5A1C9A44AB0020CDA4 /* sqlite.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		56084F871C9A44AB0020CDA4 /* strbuf.c in Sources */ = {isa = PBXBuildFile; fileRef = 56084F5B1C9A44AB0020CDA4 /* strbuf.c */; settings = {COMPILER_FLAGS = "-w"; }; };
-		56084F881C9A44AB0020CDA4 /* strbuf.h in Headers */ = {isa = PBXBuildFile; fileRef = 56084F5C1C9A44AB0020CDA4 /* strbuf.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		56084F891C9A44AB0020CDA4 /* tls.h in Headers */ = {isa = PBXBuildFile; fileRef = 56084F5D1C9A44AB0020CDA4 /* tls.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		56084F8C1C9A44AB0020CDA4 /* wkb.c in Sources */ = {isa = PBXBuildFile; fileRef = 56084F601C9A44AB0020CDA4 /* wkb.c */; settings = {COMPILER_FLAGS = "-w"; }; };
-		56084F8D1C9A44AB0020CDA4 /* wkb.h in Headers */ = {isa = PBXBuildFile; fileRef = 56084F611C9A44AB0020CDA4 /* wkb.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		56084F8E1C9A44AB0020CDA4 /* wkt.c in Sources */ = {isa = PBXBuildFile; fileRef = 56084F621C9A44AB0020CDA4 /* wkt.c */; settings = {COMPILER_FLAGS = "-w"; }; };
-		56084F8F1C9A44AB0020CDA4 /* wkt.h in Headers */ = {isa = PBXBuildFile; fileRef = 56084F631C9A44AB0020CDA4 /* wkt.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		56084F921C9A44C50020CDA4 /* Test.h in Headers */ = {isa = PBXBuildFile; fileRef = 56084F901C9A44C50020CDA4 /* Test.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		56084F931C9A44C50020CDA4 /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 56084F911C9A44C50020CDA4 /* Test.m */; };
-		56084F9A1C9A4D270020CDA4 /* sqlite3.c in Sources */ = {isa = PBXBuildFile; fileRef = 56084F971C9A4D270020CDA4 /* sqlite3.c */; settings = {COMPILER_FLAGS = "-w"; }; };
-		56084F9B1C9A4D270020CDA4 /* sqlite3.h in Headers */ = {isa = PBXBuildFile; fileRef = 56084F981C9A4D270020CDA4 /* sqlite3.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		56084F9C1C9A4D270020CDA4 /* sqlite3ext.h in Headers */ = {isa = PBXBuildFile; fileRef = 56084F991C9A4D270020CDA4 /* sqlite3ext.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5678FC371CF5396600D502C3 /* libboost.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5678FC361CF5396600D502C3 /* libboost.a */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		56084F221C9A435B0020CDA4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 56084F0D1C9A435A0020CDA4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 56084F151C9A435A0020CDA4;
-			remoteInfo = libgpkgios;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		56084F161C9A435A0020CDA4 /* libgpkgios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = libgpkgios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		56084F191C9A435A0020CDA4 /* libgpkgios.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libgpkgios.h; sourceTree = "<group>"; };
-		56084F1B1C9A435A0020CDA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		56084F201C9A435B0020CDA4 /* libgpkgiosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = libgpkgiosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		56084F251C9A435B0020CDA4 /* libgpkgiosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = libgpkgiosTests.m; sourceTree = "<group>"; };
-		56084F271C9A435B0020CDA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		56084F381C9A44AB0020CDA4 /* atomic_ops.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = atomic_ops.h; sourceTree = "<group>"; };
-		56084F391C9A44AB0020CDA4 /* binstream.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = binstream.c; sourceTree = "<group>"; };
-		56084F3A1C9A44AB0020CDA4 /* binstream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = binstream.h; sourceTree = "<group>"; };
-		56084F3B1C9A44AB0020CDA4 /* blobio.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = blobio.c; sourceTree = "<group>"; };
-		56084F3C1C9A44AB0020CDA4 /* blobio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = blobio.h; sourceTree = "<group>"; };
-		56084F3D1C9A44AB0020CDA4 /* boost_geom_func.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = boost_geom_func.cpp; sourceTree = "<group>"; };
-		56084F3E1C9A44AB0020CDA4 /* boost_geom_io.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = boost_geom_io.cpp; sourceTree = "<group>"; };
-		56084F3F1C9A44AB0020CDA4 /* boost_geom_io.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = boost_geom_io.hpp; sourceTree = "<group>"; };
-		56084F401C9A44AB0020CDA4 /* boost_geom_wrapper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = boost_geom_wrapper.cpp; sourceTree = "<group>"; };
-		56084F411C9A44AB0020CDA4 /* boost_geom_wrapper.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = boost_geom_wrapper.hpp; sourceTree = "<group>"; };
-		56084F421C9A44AB0020CDA4 /* boost_geometries.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = boost_geometries.hpp; sourceTree = "<group>"; };
-		56084F431C9A44AB0020CDA4 /* dynlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dynlib.h; sourceTree = "<group>"; };
-		56084F441C9A44AB0020CDA4 /* error.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = error.c; sourceTree = "<group>"; };
-		56084F451C9A44AB0020CDA4 /* error.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = error.h; sourceTree = "<group>"; };
-		56084F461C9A44AB0020CDA4 /* fp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fp.c; sourceTree = "<group>"; };
-		56084F471C9A44AB0020CDA4 /* fp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fp.h; sourceTree = "<group>"; };
-		56084F481C9A44AB0020CDA4 /* geom_func.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = geom_func.h; sourceTree = "<group>"; };
-		56084F491C9A44AB0020CDA4 /* geomio.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = geomio.c; sourceTree = "<group>"; };
-		56084F4A1C9A44AB0020CDA4 /* geomio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = geomio.h; sourceTree = "<group>"; };
-		56084F4B1C9A44AB0020CDA4 /* gpkg_db.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gpkg_db.c; sourceTree = "<group>"; };
-		56084F4C1C9A44AB0020CDA4 /* gpkg_geom.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gpkg_geom.c; sourceTree = "<group>"; };
-		56084F4D1C9A44AB0020CDA4 /* gpkg_geom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gpkg_geom.h; sourceTree = "<group>"; };
-		56084F4E1C9A44AB0020CDA4 /* gpkg.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gpkg.c; sourceTree = "<group>"; };
-		56084F4F1C9A44AB0020CDA4 /* gpkg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gpkg.h; sourceTree = "<group>"; };
-		56084F501C9A44AB0020CDA4 /* i18n.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = i18n.c; sourceTree = "<group>"; };
-		56084F511C9A44AB0020CDA4 /* i18n.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = i18n.h; sourceTree = "<group>"; };
-		56084F521C9A44AB0020CDA4 /* spatialdb_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = spatialdb_internal.h; sourceTree = "<group>"; };
-		56084F531C9A44AB0020CDA4 /* spatialdb.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = spatialdb.c; sourceTree = "<group>"; };
-		56084F541C9A44AB0020CDA4 /* spatialdb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = spatialdb.h; sourceTree = "<group>"; };
-		56084F551C9A44AB0020CDA4 /* spl_db.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = spl_db.c; sourceTree = "<group>"; };
-		56084F561C9A44AB0020CDA4 /* spl_geom.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = spl_geom.c; sourceTree = "<group>"; };
-		56084F571C9A44AB0020CDA4 /* spl_geom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = spl_geom.h; sourceTree = "<group>"; };
-		56084F581C9A44AB0020CDA4 /* sql.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sql.c; sourceTree = "<group>"; };
-		56084F591C9A44AB0020CDA4 /* sql.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sql.h; sourceTree = "<group>"; };
-		56084F5A1C9A44AB0020CDA4 /* sqlite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sqlite.h; sourceTree = "<group>"; };
-		56084F5B1C9A44AB0020CDA4 /* strbuf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = strbuf.c; sourceTree = "<group>"; };
-		56084F5C1C9A44AB0020CDA4 /* strbuf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = strbuf.h; sourceTree = "<group>"; };
-		56084F5D1C9A44AB0020CDA4 /* tls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tls.h; sourceTree = "<group>"; };
-		56084F601C9A44AB0020CDA4 /* wkb.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wkb.c; sourceTree = "<group>"; };
-		56084F611C9A44AB0020CDA4 /* wkb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wkb.h; sourceTree = "<group>"; };
-		56084F621C9A44AB0020CDA4 /* wkt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wkt.c; sourceTree = "<group>"; };
-		56084F631C9A44AB0020CDA4 /* wkt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wkt.h; sourceTree = "<group>"; };
-		56084F901C9A44C50020CDA4 /* Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
-		56084F911C9A44C50020CDA4 /* Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test.m; sourceTree = "<group>"; };
-		56084F941C9A47B40020CDA4 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
-		56084F971C9A4D270020CDA4 /* sqlite3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sqlite3.c; sourceTree = "<group>"; };
-		56084F981C9A4D270020CDA4 /* sqlite3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sqlite3.h; sourceTree = "<group>"; };
-		56084F991C9A4D270020CDA4 /* sqlite3ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sqlite3ext.h; sourceTree = "<group>"; };
-		5678FC361CF5396600D502C3 /* libboost.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost.a; path = libs/boost/ios/libboost.a; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		56084F121C9A435A0020CDA4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5678FC371CF5396600D502C3 /* libboost.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		56084F1D1C9A435B0020CDA4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				56084F211C9A435B0020CDA4 /* libgpkgios.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		251ED4267AFDBEDF2D2C4E52 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				5678FC361CF5396600D502C3 /* libboost.a */,
-				56084F941C9A47B40020CDA4 /* libsqlite3.tbd */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		56084F0C1C9A435A0020CDA4 = {
-			isa = PBXGroup;
-			children = (
-				56084F181C9A435A0020CDA4 /* libgpkgios */,
-				56084F241C9A435B0020CDA4 /* libgpkgiosTests */,
-				56084F171C9A435A0020CDA4 /* Products */,
-				251ED4267AFDBEDF2D2C4E52 /* Frameworks */,
-			);
-			sourceTree = "<group>";
-		};
-		56084F171C9A435A0020CDA4 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				56084F161C9A435A0020CDA4 /* libgpkgios.framework */,
-				56084F201C9A435B0020CDA4 /* libgpkgiosTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		56084F181C9A435A0020CDA4 /* libgpkgios */ = {
-			isa = PBXGroup;
-			children = (
-				56084F961C9A4CFB0020CDA4 /* sqlite3 */,
-				56084F311C9A44880020CDA4 /* libgpkg */,
-				56084F191C9A435A0020CDA4 /* libgpkgios.h */,
-				56084F901C9A44C50020CDA4 /* Test.h */,
-				56084F911C9A44C50020CDA4 /* Test.m */,
-				56084F1B1C9A435A0020CDA4 /* Info.plist */,
-			);
-			path = libgpkgios;
-			sourceTree = "<group>";
-		};
-		56084F241C9A435B0020CDA4 /* libgpkgiosTests */ = {
-			isa = PBXGroup;
-			children = (
-				56084F251C9A435B0020CDA4 /* libgpkgiosTests.m */,
-				56084F271C9A435B0020CDA4 /* Info.plist */,
-			);
-			path = libgpkgiosTests;
-			sourceTree = "<group>";
-		};
-		56084F311C9A44880020CDA4 /* libgpkg */ = {
-			isa = PBXGroup;
-			children = (
-				56084F381C9A44AB0020CDA4 /* atomic_ops.h */,
-				56084F391C9A44AB0020CDA4 /* binstream.c */,
-				56084F3A1C9A44AB0020CDA4 /* binstream.h */,
-				56084F3B1C9A44AB0020CDA4 /* blobio.c */,
-				56084F3C1C9A44AB0020CDA4 /* blobio.h */,
-				56084F3D1C9A44AB0020CDA4 /* boost_geom_func.cpp */,
-				56084F3E1C9A44AB0020CDA4 /* boost_geom_io.cpp */,
-				56084F3F1C9A44AB0020CDA4 /* boost_geom_io.hpp */,
-				56084F401C9A44AB0020CDA4 /* boost_geom_wrapper.cpp */,
-				56084F411C9A44AB0020CDA4 /* boost_geom_wrapper.hpp */,
-				56084F421C9A44AB0020CDA4 /* boost_geometries.hpp */,
-				56084F431C9A44AB0020CDA4 /* dynlib.h */,
-				56084F441C9A44AB0020CDA4 /* error.c */,
-				56084F451C9A44AB0020CDA4 /* error.h */,
-				56084F461C9A44AB0020CDA4 /* fp.c */,
-				56084F471C9A44AB0020CDA4 /* fp.h */,
-				56084F481C9A44AB0020CDA4 /* geom_func.h */,
-				56084F491C9A44AB0020CDA4 /* geomio.c */,
-				56084F4A1C9A44AB0020CDA4 /* geomio.h */,
-				56084F4B1C9A44AB0020CDA4 /* gpkg_db.c */,
-				56084F4C1C9A44AB0020CDA4 /* gpkg_geom.c */,
-				56084F4D1C9A44AB0020CDA4 /* gpkg_geom.h */,
-				56084F4E1C9A44AB0020CDA4 /* gpkg.c */,
-				56084F4F1C9A44AB0020CDA4 /* gpkg.h */,
-				56084F501C9A44AB0020CDA4 /* i18n.c */,
-				56084F511C9A44AB0020CDA4 /* i18n.h */,
-				56084F521C9A44AB0020CDA4 /* spatialdb_internal.h */,
-				56084F531C9A44AB0020CDA4 /* spatialdb.c */,
-				56084F541C9A44AB0020CDA4 /* spatialdb.h */,
-				56084F551C9A44AB0020CDA4 /* spl_db.c */,
-				56084F561C9A44AB0020CDA4 /* spl_geom.c */,
-				56084F571C9A44AB0020CDA4 /* spl_geom.h */,
-				56084F581C9A44AB0020CDA4 /* sql.c */,
-				56084F591C9A44AB0020CDA4 /* sql.h */,
-				56084F5A1C9A44AB0020CDA4 /* sqlite.h */,
-				56084F5B1C9A44AB0020CDA4 /* strbuf.c */,
-				56084F5C1C9A44AB0020CDA4 /* strbuf.h */,
-				56084F5D1C9A44AB0020CDA4 /* tls.h */,
-				56084F601C9A44AB0020CDA4 /* wkb.c */,
-				56084F611C9A44AB0020CDA4 /* wkb.h */,
-				56084F621C9A44AB0020CDA4 /* wkt.c */,
-				56084F631C9A44AB0020CDA4 /* wkt.h */,
-			);
-			name = libgpkg;
-			sourceTree = "<group>";
-		};
-		56084F961C9A4CFB0020CDA4 /* sqlite3 */ = {
-			isa = PBXGroup;
-			children = (
-				56084F971C9A4D270020CDA4 /* sqlite3.c */,
-				56084F981C9A4D270020CDA4 /* sqlite3.h */,
-				56084F991C9A4D270020CDA4 /* sqlite3ext.h */,
-			);
-			name = sqlite3;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXHeadersBuildPhase section */
-		56084F131C9A435A0020CDA4 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				56084F851C9A44AB0020CDA4 /* sql.h in Headers */,
-				56084F9B1C9A4D270020CDA4 /* sqlite3.h in Headers */,
-				56084F861C9A44AB0020CDA4 /* sqlite.h in Headers */,
-				56084F6E1C9A44AB0020CDA4 /* boost_geometries.hpp in Headers */,
-				56084F801C9A44AB0020CDA4 /* spatialdb.h in Headers */,
-				56084F881C9A44AB0020CDA4 /* strbuf.h in Headers */,
-				56084F641C9A44AB0020CDA4 /* atomic_ops.h in Headers */,
-				56084F891C9A44AB0020CDA4 /* tls.h in Headers */,
-				56084F711C9A44AB0020CDA4 /* error.h in Headers */,
-				56084F921C9A44C50020CDA4 /* Test.h in Headers */,
-				56084F7E1C9A44AB0020CDA4 /* spatialdb_internal.h in Headers */,
-				56084F8D1C9A44AB0020CDA4 /* wkb.h in Headers */,
-				56084F6B1C9A44AB0020CDA4 /* boost_geom_io.hpp in Headers */,
-				56084F7B1C9A44AB0020CDA4 /* gpkg.h in Headers */,
-				56084F731C9A44AB0020CDA4 /* fp.h in Headers */,
-				56084F6D1C9A44AB0020CDA4 /* boost_geom_wrapper.hpp in Headers */,
-				56084F6F1C9A44AB0020CDA4 /* dynlib.h in Headers */,
-				56084F8F1C9A44AB0020CDA4 /* wkt.h in Headers */,
-				56084F791C9A44AB0020CDA4 /* gpkg_geom.h in Headers */,
-				56084F661C9A44AB0020CDA4 /* binstream.h in Headers */,
-				56084F831C9A44AB0020CDA4 /* spl_geom.h in Headers */,
-				56084F761C9A44AB0020CDA4 /* geomio.h in Headers */,
-				56084F7D1C9A44AB0020CDA4 /* i18n.h in Headers */,
-				56084F681C9A44AB0020CDA4 /* blobio.h in Headers */,
-				56084F741C9A44AB0020CDA4 /* geom_func.h in Headers */,
-				56084F9C1C9A4D270020CDA4 /* sqlite3ext.h in Headers */,
-				56084F1A1C9A435A0020CDA4 /* libgpkgios.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
-/* Begin PBXNativeTarget section */
-		56084F151C9A435A0020CDA4 /* libgpkgios */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 56084F2A1C9A435B0020CDA4 /* Build configuration list for PBXNativeTarget "libgpkgios" */;
-			buildPhases = (
-				56084F111C9A435A0020CDA4 /* Sources */,
-				56084F121C9A435A0020CDA4 /* Frameworks */,
-				56084F131C9A435A0020CDA4 /* Headers */,
-				56084F141C9A435A0020CDA4 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = libgpkgios;
-			productName = libgpkgios;
-			productReference = 56084F161C9A435A0020CDA4 /* libgpkgios.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		56084F1F1C9A435B0020CDA4 /* libgpkgiosTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 56084F2D1C9A435B0020CDA4 /* Build configuration list for PBXNativeTarget "libgpkgiosTests" */;
-			buildPhases = (
-				56084F1C1C9A435B0020CDA4 /* Sources */,
-				56084F1D1C9A435B0020CDA4 /* Frameworks */,
-				56084F1E1C9A435B0020CDA4 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				56084F231C9A435B0020CDA4 /* PBXTargetDependency */,
-			);
-			name = libgpkgiosTests;
-			productName = libgpkgiosTests;
-			productReference = 56084F201C9A435B0020CDA4 /* libgpkgiosTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		56084F0D1C9A435A0020CDA4 /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastUpgradeCheck = 0720;
-				ORGANIZATIONNAME = tetriscodes;
-				TargetAttributes = {
-					56084F151C9A435A0020CDA4 = {
-						CreatedOnToolsVersion = 7.2.1;
-					};
-					56084F1F1C9A435B0020CDA4 = {
-						CreatedOnToolsVersion = 7.2.1;
-					};
-				};
-			};
-			buildConfigurationList = 56084F101C9A435A0020CDA4 /* Build configuration list for PBXProject "libgpkgios" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-			);
-			mainGroup = 56084F0C1C9A435A0020CDA4;
-			productRefGroup = 56084F171C9A435A0020CDA4 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				56084F151C9A435A0020CDA4 /* libgpkgios */,
-				56084F1F1C9A435B0020CDA4 /* libgpkgiosTests */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		56084F141C9A435A0020CDA4 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		56084F1E1C9A435B0020CDA4 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		56084F111C9A435A0020CDA4 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				56084F7C1C9A44AB0020CDA4 /* i18n.c in Sources */,
-				56084F931C9A44C50020CDA4 /* Test.m in Sources */,
-				56084F821C9A44AB0020CDA4 /* spl_geom.c in Sources */,
-				56084F841C9A44AB0020CDA4 /* sql.c in Sources */,
-				56084F781C9A44AB0020CDA4 /* gpkg_geom.c in Sources */,
-				56084F7F1C9A44AB0020CDA4 /* spatialdb.c in Sources */,
-				56084F811C9A44AB0020CDA4 /* spl_db.c in Sources */,
-				56084F6C1C9A44AB0020CDA4 /* boost_geom_wrapper.cpp in Sources */,
-				56084F9A1C9A4D270020CDA4 /* sqlite3.c in Sources */,
-				56084F8E1C9A44AB0020CDA4 /* wkt.c in Sources */,
-				56084F691C9A44AB0020CDA4 /* boost_geom_func.cpp in Sources */,
-				56084F721C9A44AB0020CDA4 /* fp.c in Sources */,
-				56084F771C9A44AB0020CDA4 /* gpkg_db.c in Sources */,
-				56084F701C9A44AB0020CDA4 /* error.c in Sources */,
-				56084F751C9A44AB0020CDA4 /* geomio.c in Sources */,
-				56084F8C1C9A44AB0020CDA4 /* wkb.c in Sources */,
-				56084F7A1C9A44AB0020CDA4 /* gpkg.c in Sources */,
-				56084F6A1C9A44AB0020CDA4 /* boost_geom_io.cpp in Sources */,
-				56084F651C9A44AB0020CDA4 /* binstream.c in Sources */,
-				56084F671C9A44AB0020CDA4 /* blobio.c in Sources */,
-				56084F871C9A44AB0020CDA4 /* strbuf.c in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		56084F1C1C9A435B0020CDA4 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				56084F261C9A435B0020CDA4 /* libgpkgiosTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		56084F231C9A435B0020CDA4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 56084F151C9A435A0020CDA4 /* libgpkgios */;
-			targetProxy = 56084F221C9A435B0020CDA4 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin XCBuildConfiguration section */
-		56084F281C9A435B0020CDA4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = NO;
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		56084F291C9A435B0020CDA4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		56084F2B1C9A435B0020CDA4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_BITCODE = NO;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"$(inherited)",
-					"COCOAPODS=1",
-					"LIBGPKG_VERSION=1",
-				);
-				GCC_WARN_INHIBIT_ALL_WARNINGS = NO;
-				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/libs/**";
-				INFOPLIST_FILE = libgpkgios/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/libs/boost/ios",
-				);
-				OTHER_CFLAGS = (
-					"$(inherited)",
-					"-isystem",
-					"\"${PODS_ROOT}/Headers/Public\"",
-					"-isystem",
-					"\"${PODS_ROOT}/Headers/Public/ofxiOSBoost\"",
-					"-DSQLITE_CORE",
-					"-DSQLITE_ENABLE_RTREE=1",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.tetriscodes.libgpkgios;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		56084F2C1C9A435B0020CDA4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_BITCODE = NO;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"$(inherited)",
-					"COCOAPODS=1",
-					"LIBGPKG_VERSION=1",
-				);
-				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
-				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/libs/**";
-				INFOPLIST_FILE = libgpkgios/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/libs/boost/ios",
-				);
-				OTHER_CFLAGS = (
-					"$(inherited)",
-					"-isystem",
-					"\"${PODS_ROOT}/Headers/Public\"",
-					"-isystem",
-					"\"${PODS_ROOT}/Headers/Public/ofxiOSBoost\"",
-					"-DSQLITE_CORE",
-					"-DSQLITE_ENABLE_RTREE=1",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.tetriscodes.libgpkgios;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		56084F2E1C9A435B0020CDA4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = libgpkgiosTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tetriscodes.libgpkgiosTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		56084F2F1C9A435B0020CDA4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = libgpkgiosTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tetriscodes.libgpkgiosTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		56084F101C9A435A0020CDA4 /* Build configuration list for PBXProject "libgpkgios" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				56084F281C9A435B0020CDA4 /* Debug */,
-				56084F291C9A435B0020CDA4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		56084F2A1C9A435B0020CDA4 /* Build configuration list for PBXNativeTarget "libgpkgios" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				56084F2B1C9A435B0020CDA4 /* Debug */,
-				56084F2C1C9A435B0020CDA4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		56084F2D1C9A435B0020CDA4 /* Build configuration list for PBXNativeTarget "libgpkgiosTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				56084F2E1C9A435B0020CDA4 /* Debug */,
-				56084F2F1C9A435B0020CDA4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = 56084F0D1C9A435A0020CDA4 /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>251ED4267AFDBEDF2D2C4E52</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>5678FC361CF5396600D502C3</string>
+				<string>56084F941C9A47B40020CDA4</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>56084F0C1C9A435A0020CDA4</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>56084F181C9A435A0020CDA4</string>
+				<string>56084F241C9A435B0020CDA4</string>
+				<string>56084F171C9A435A0020CDA4</string>
+				<string>251ED4267AFDBEDF2D2C4E52</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>56084F0D1C9A435A0020CDA4</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastUpgradeCheck</key>
+				<string>0720</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>tetriscodes</string>
+				<key>TargetAttributes</key>
+				<dict>
+					<key>56084F151C9A435A0020CDA4</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>7.2.1</string>
+					</dict>
+					<key>56084F1F1C9A435B0020CDA4</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>7.2.1</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>56084F101C9A435A0020CDA4</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+			</array>
+			<key>mainGroup</key>
+			<string>56084F0C1C9A435A0020CDA4</string>
+			<key>productRefGroup</key>
+			<string>56084F171C9A435A0020CDA4</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>56084F151C9A435A0020CDA4</string>
+				<string>56084F1F1C9A435B0020CDA4</string>
+			</array>
+		</dict>
+		<key>56084F101C9A435A0020CDA4</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>56084F281C9A435B0020CDA4</string>
+				<string>56084F291C9A435B0020CDA4</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>56084F111C9A435A0020CDA4</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>56B173251D146B9A00BD0BBF</string>
+				<string>56B172E71D146B8400BD0BBF</string>
+				<string>56B173351D146B9A00BD0BBF</string>
+				<string>56B1732F1D146B9A00BD0BBF</string>
+				<string>56084F931C9A44C50020CDA4</string>
+				<string>56B173151D146B9A00BD0BBF</string>
+				<string>56B173221D146B9A00BD0BBF</string>
+				<string>56B1731A1D146B9A00BD0BBF</string>
+				<string>56B1732D1D146B9A00BD0BBF</string>
+				<string>56B173371D146B9A00BD0BBF</string>
+				<string>56B172D61D146B6D00BD0BBF</string>
+				<string>56B1732A1D146B9A00BD0BBF</string>
+				<string>56B173231D146B9A00BD0BBF</string>
+				<string>56B172EA1D146B8400BD0BBF</string>
+				<string>56B172EC1D146B8400BD0BBF</string>
+				<string>56B173271D146B9A00BD0BBF</string>
+				<string>56B173321D146B9A00BD0BBF</string>
+				<string>56B173171D146B9A00BD0BBF</string>
+				<string>56B172E91D146B8400BD0BBF</string>
+				<string>56B1732C1D146B9A00BD0BBF</string>
+				<string>56B172E51D146B8400BD0BBF</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>56084F121C9A435A0020CDA4</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>5678FC371CF5396600D502C3</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>56084F131C9A435A0020CDA4</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>56B173141D146B9A00BD0BBF</string>
+				<string>56B172E81D146B8400BD0BBF</string>
+				<string>56B172E41D146B8400BD0BBF</string>
+				<string>56B173261D146B9A00BD0BBF</string>
+				<string>56B1731B1D146B9A00BD0BBF</string>
+				<string>56B173241D146B9A00BD0BBF</string>
+				<string>56B173311D146B9A00BD0BBF</string>
+				<string>56B173161D146B9A00BD0BBF</string>
+				<string>56B172D81D146B6D00BD0BBF</string>
+				<string>56B173281D146B9A00BD0BBF</string>
+				<string>56B173301D146B9A00BD0BBF</string>
+				<string>56B173341D146B9A00BD0BBF</string>
+				<string>56B173381D146B9A00BD0BBF</string>
+				<string>56B172E61D146B8400BD0BBF</string>
+				<string>56B173361D146B9A00BD0BBF</string>
+				<string>56B173331D146B9A00BD0BBF</string>
+				<string>56B172EB1D146B8400BD0BBF</string>
+				<string>56B172ED1D146B8400BD0BBF</string>
+				<string>56084F921C9A44C50020CDA4</string>
+				<string>56B172D71D146B6D00BD0BBF</string>
+				<string>56B172EE1D146B8400BD0BBF</string>
+				<string>56B173291D146B9A00BD0BBF</string>
+				<string>56084F1A1C9A435A0020CDA4</string>
+				<string>56B173191D146B9A00BD0BBF</string>
+				<string>56B173181D146B9A00BD0BBF</string>
+				<string>56B1732E1D146B9A00BD0BBF</string>
+				<string>56B1732B1D146B9A00BD0BBF</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>56084F141C9A435A0020CDA4</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>56084F151C9A435A0020CDA4</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>56084F2A1C9A435B0020CDA4</string>
+			<key>buildPhases</key>
+			<array>
+				<string>56084F111C9A435A0020CDA4</string>
+				<string>56084F121C9A435A0020CDA4</string>
+				<string>56084F131C9A435A0020CDA4</string>
+				<string>56084F141C9A435A0020CDA4</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>libgpkgios</string>
+			<key>productName</key>
+			<string>libgpkgios</string>
+			<key>productReference</key>
+			<string>56084F161C9A435A0020CDA4</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
+		</dict>
+		<key>56084F161C9A435A0020CDA4</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libgpkgios.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>56084F171C9A435A0020CDA4</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>56084F161C9A435A0020CDA4</string>
+				<string>56084F201C9A435B0020CDA4</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>56084F181C9A435A0020CDA4</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>56084F961C9A4CFB0020CDA4</string>
+				<string>56084F311C9A44880020CDA4</string>
+				<string>56084F191C9A435A0020CDA4</string>
+				<string>56084F901C9A44C50020CDA4</string>
+				<string>56084F911C9A44C50020CDA4</string>
+				<string>56084F1B1C9A435A0020CDA4</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>libgpkgios</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>56084F191C9A435A0020CDA4</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>libgpkgios.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>56084F1A1C9A435A0020CDA4</key>
+		<dict>
+			<key>fileRef</key>
+			<string>56084F191C9A435A0020CDA4</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>56084F1B1C9A435A0020CDA4</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>56084F1C1C9A435B0020CDA4</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>56084F261C9A435B0020CDA4</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>56084F1D1C9A435B0020CDA4</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>56084F211C9A435B0020CDA4</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>56084F1E1C9A435B0020CDA4</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>56084F1F1C9A435B0020CDA4</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>56084F2D1C9A435B0020CDA4</string>
+			<key>buildPhases</key>
+			<array>
+				<string>56084F1C1C9A435B0020CDA4</string>
+				<string>56084F1D1C9A435B0020CDA4</string>
+				<string>56084F1E1C9A435B0020CDA4</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>56084F231C9A435B0020CDA4</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>libgpkgiosTests</string>
+			<key>productName</key>
+			<string>libgpkgiosTests</string>
+			<key>productReference</key>
+			<string>56084F201C9A435B0020CDA4</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.unit-test</string>
+		</dict>
+		<key>56084F201C9A435B0020CDA4</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libgpkgiosTests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>56084F211C9A435B0020CDA4</key>
+		<dict>
+			<key>fileRef</key>
+			<string>56084F161C9A435A0020CDA4</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>56084F221C9A435B0020CDA4</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>56084F0D1C9A435A0020CDA4</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>56084F151C9A435A0020CDA4</string>
+			<key>remoteInfo</key>
+			<string>libgpkgios</string>
+		</dict>
+		<key>56084F231C9A435B0020CDA4</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>56084F151C9A435A0020CDA4</string>
+			<key>targetProxy</key>
+			<string>56084F221C9A435B0020CDA4</string>
+		</dict>
+		<key>56084F241C9A435B0020CDA4</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>56084F251C9A435B0020CDA4</string>
+				<string>56084F271C9A435B0020CDA4</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>libgpkgiosTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>56084F251C9A435B0020CDA4</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>libgpkgiosTests.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>56084F261C9A435B0020CDA4</key>
+		<dict>
+			<key>fileRef</key>
+			<string>56084F251C9A435B0020CDA4</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>56084F271C9A435B0020CDA4</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>56084F281C9A435B0020CDA4</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>ENABLE_TESTABILITY</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.2</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>NO</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>56084F291C9A435B0020CDA4</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf-with-dsym</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.2</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>56084F2A1C9A435B0020CDA4</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>56084F2B1C9A435B0020CDA4</string>
+				<string>56084F2C1C9A435B0020CDA4</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>56084F2B1C9A435B0020CDA4</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_BITCODE</key>
+				<string>NO</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>COCOAPODS=1</string>
+					<string>LIBGPKG_VERSION=1</string>
+				</array>
+				<key>GCC_WARN_INHIBIT_ALL_WARNINGS</key>
+				<string>NO</string>
+				<key>HEADER_SEARCH_PATHS</key>
+				<string>$(PROJECT_DIR)/libs/**</string>
+				<key>INFOPLIST_FILE</key>
+				<string>libgpkgios/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>LIBRARY_SEARCH_PATHS</key>
+				<string>$(PROJECT_DIR)/libs/boost/ios</string>
+				<key>OTHER_CFLAGS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>-isystem</string>
+					<string>"${PODS_ROOT}/Headers/Public"</string>
+					<string>-isystem</string>
+					<string>"${PODS_ROOT}/Headers/Public/ofxiOSBoost"</string>
+					<string>-DSQLITE_CORE</string>
+					<string>-DSQLITE_ENABLE_RTREE=1</string>
+				</array>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>com.tetriscodes.libgpkgios</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>56084F2C1C9A435B0020CDA4</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_BITCODE</key>
+				<string>NO</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>COCOAPODS=1</string>
+					<string>LIBGPKG_VERSION=1</string>
+				</array>
+				<key>GCC_WARN_INHIBIT_ALL_WARNINGS</key>
+				<string>YES</string>
+				<key>HEADER_SEARCH_PATHS</key>
+				<string>$(PROJECT_DIR)/libs/**</string>
+				<key>INFOPLIST_FILE</key>
+				<string>libgpkgios/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>LIBRARY_SEARCH_PATHS</key>
+				<string>$(PROJECT_DIR)/libs/boost/ios</string>
+				<key>OTHER_CFLAGS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>-isystem</string>
+					<string>"${PODS_ROOT}/Headers/Public"</string>
+					<string>-isystem</string>
+					<string>"${PODS_ROOT}/Headers/Public/ofxiOSBoost"</string>
+					<string>-DSQLITE_CORE</string>
+					<string>-DSQLITE_ENABLE_RTREE=1</string>
+				</array>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>com.tetriscodes.libgpkgios</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>56084F2D1C9A435B0020CDA4</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>56084F2E1C9A435B0020CDA4</string>
+				<string>56084F2F1C9A435B0020CDA4</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>56084F2E1C9A435B0020CDA4</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>INFOPLIST_FILE</key>
+				<string>libgpkgiosTests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>com.tetriscodes.libgpkgiosTests</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>56084F2F1C9A435B0020CDA4</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>INFOPLIST_FILE</key>
+				<string>libgpkgiosTests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>com.tetriscodes.libgpkgiosTests</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>56084F311C9A44880020CDA4</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>56B172EF1D146B9A00BD0BBF</string>
+				<string>56B172F01D146B9A00BD0BBF</string>
+				<string>56B172F11D146B9A00BD0BBF</string>
+				<string>56B172F21D146B9A00BD0BBF</string>
+				<string>56B172F31D146B9A00BD0BBF</string>
+				<string>56B172F41D146B9A00BD0BBF</string>
+				<string>56B172F51D146B9A00BD0BBF</string>
+				<string>56B172F61D146B9A00BD0BBF</string>
+				<string>56B172FD1D146B9A00BD0BBF</string>
+				<string>56B172FE1D146B9A00BD0BBF</string>
+				<string>56B172FF1D146B9A00BD0BBF</string>
+				<string>56B173001D146B9A00BD0BBF</string>
+				<string>56B173011D146B9A00BD0BBF</string>
+				<string>56B173021D146B9A00BD0BBF</string>
+				<string>56B173031D146B9A00BD0BBF</string>
+				<string>56B173041D146B9A00BD0BBF</string>
+				<string>56B173051D146B9A00BD0BBF</string>
+				<string>56B173061D146B9A00BD0BBF</string>
+				<string>56B173071D146B9A00BD0BBF</string>
+				<string>56B173081D146B9A00BD0BBF</string>
+				<string>56B173091D146B9A00BD0BBF</string>
+				<string>56B1730A1D146B9A00BD0BBF</string>
+				<string>56B1730B1D146B9A00BD0BBF</string>
+				<string>56B1730C1D146B9A00BD0BBF</string>
+				<string>56B1730D1D146B9A00BD0BBF</string>
+				<string>56B1730E1D146B9A00BD0BBF</string>
+				<string>56B1730F1D146B9A00BD0BBF</string>
+				<string>56B173101D146B9A00BD0BBF</string>
+				<string>56B173111D146B9A00BD0BBF</string>
+				<string>56B173121D146B9A00BD0BBF</string>
+				<string>56B173131D146B9A00BD0BBF</string>
+				<string>56B172D91D146B8400BD0BBF</string>
+				<string>56B172DA1D146B8400BD0BBF</string>
+				<string>56B172DB1D146B8400BD0BBF</string>
+				<string>56B172DC1D146B8400BD0BBF</string>
+				<string>56B172DD1D146B8400BD0BBF</string>
+				<string>56B172DE1D146B8400BD0BBF</string>
+				<string>56B172DF1D146B8400BD0BBF</string>
+				<string>56B172E01D146B8400BD0BBF</string>
+				<string>56B172E11D146B8400BD0BBF</string>
+				<string>56B172E21D146B8400BD0BBF</string>
+				<string>56B172E31D146B8400BD0BBF</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>libgpkg</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>56084F901C9A44C50020CDA4</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Test.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>56084F911C9A44C50020CDA4</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Test.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>56084F921C9A44C50020CDA4</key>
+		<dict>
+			<key>fileRef</key>
+			<string>56084F901C9A44C50020CDA4</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>56084F931C9A44C50020CDA4</key>
+		<dict>
+			<key>fileRef</key>
+			<string>56084F911C9A44C50020CDA4</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>56084F941C9A47B40020CDA4</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.text-based-dylib-definition</string>
+			<key>name</key>
+			<string>libsqlite3.tbd</string>
+			<key>path</key>
+			<string>usr/lib/libsqlite3.tbd</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>56084F961C9A4CFB0020CDA4</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>56B172D31D146B6D00BD0BBF</string>
+				<string>56B172D41D146B6D00BD0BBF</string>
+				<string>56B172D51D146B6D00BD0BBF</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>sqlite3</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5678FC361CF5396600D502C3</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>archive.ar</string>
+			<key>name</key>
+			<string>libboost.a</string>
+			<key>path</key>
+			<string>libs/boost/ios/libboost.a</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5678FC371CF5396600D502C3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>5678FC361CF5396600D502C3</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>56B172D31D146B6D00BD0BBF</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.c</string>
+			<key>name</key>
+			<string>sqlite3.c</string>
+			<key>path</key>
+			<string>libgpkg/sqlite/sqlite3.c</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>56B172D41D146B6D00BD0BBF</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>sqlite3.h</string>
+			<key>path</key>
+			<string>libgpkg/sqlite/sqlite3.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>56B172D51D146B6D00BD0BBF</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>sqlite3ext.h</string>
+			<key>path</key>
+			<string>libgpkg/sqlite/sqlite3ext.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>56B172D61D146B6D00BD0BBF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>56B172D31D146B6D00BD0BBF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>56B172D71D146B6D00BD0BBF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>56B172D41D146B6D00BD0BBF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>56B172D81D146B6D00BD0BBF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>56B172D51D146B6D00BD0BBF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>56B172D91D146B8400BD0BBF</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>atomic_ops.h</string>
+			<key>path</key>
+			<string>libgpkg/gpkg/atomic_ops.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>56B172DA1D146B8400BD0BBF</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.c</string>
+			<key>name</key>
+			<string>binstream.c</string>
+			<key>path</key>
+			<string>libgpkg/gpkg/binstream.c</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>56B172DB1D146B8400BD0BBF</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>binstream.h</string>
+			<key>path</key>
+			<string>libgpkg/gpkg/binstream.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>56B172DC1D146B8400BD0BBF</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.c</string>
+			<key>name</key>
+			<string>blobio.c</string>
+			<key>path</key>
+			<string>libgpkg/gpkg/blobio.c</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>56B172DD1D146B8400BD0BBF</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>blobio.h</string>
+			<key>path</key>
+			<string>libgpkg/gpkg/blobio.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>56B172DE1D146B8400BD0BBF</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.cpp.cpp</string>
+			<key>name</key>
+			<string>boost_geom_func.cpp</string>
+			<key>path</key>
+			<string>libgpkg/gpkg/boost_geom_func.cpp</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>56B172DF1D146B8400BD0BBF</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.cpp.cpp</string>
+			<key>name</key>
+			<string>boost_geom_io.cpp</string>
+			<key>path</key>
+			<string>libgpkg/gpkg/boost_geom_io.cpp</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>56B172E01D146B8400BD0BBF</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.cpp.h</string>
+			<key>name</key>
+			<string>boost_geom_io.hpp</string>
+			<key>path</key>
+			<string>libgpkg/gpkg/boost_geom_io.hpp</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>56B172E11D146B8400BD0BBF</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.cpp.cpp</string>
+			<key>name</key>
+			<string>boost_geom_wrapper.cpp</string>
+			<key>path</key>
+			<string>libgpkg/gpkg/boost_geom_wrapper.cpp</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>56B172E21D146B8400BD0BBF</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.cpp.h</string>
+			<key>name</key>
+			<string>boost_geom_wrapper.hpp</string>
+			<key>path</key>
+			<string>libgpkg/gpkg/boost_geom_wrapper.hpp</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>56B172E31D146B8400BD0BBF</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.cpp.h</string>
+			<key>name</key>
+			<string>boost_geometries.hpp</string>
+			<key>path</key>
+			<string>libgpkg/gpkg/boost_geometries.hpp</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>56B172E41D146B8400BD0BBF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>56B172D91D146B8400BD0BBF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>56B172E51D146B8400BD0BBF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>56B172DA1D146B8400BD0BBF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>56B172E61D146B8400BD0BBF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>56B172DB1D146B8400BD0BBF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>56B172E71D146B8400BD0BBF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>56B172DC1D146B8400BD0BBF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>56B172E81D146B8400BD0BBF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>56B172DD1D146B8400BD0BBF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>56B172E91D146B8400BD0BBF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>56B172DE1D146B8400BD0BBF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>56B172EA1D146B8400BD0BBF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>56B172DF1D146B8400BD0BBF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>56B172EB1D146B8400BD0BBF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>56B172E01D146B8400BD0BBF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>56B172EC1D146B8400BD0BBF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>56B172E11D146B8400BD0BBF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>56B172ED1D146B8400BD0BBF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>56B172E21D146B8400BD0BBF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>56B172EE1D146B8400BD0BBF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>56B172E31D146B8400BD0BBF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>56B172EF1D146B9A00BD0BBF</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>dynlib.h</string>
+			<key>path</key>
+			<string>libgpkg/gpkg/dynlib.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>56B172F01D146B9A00BD0BBF</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.c</string>
+			<key>name</key>
+			<string>error.c</string>
+			<key>path</key>
+			<string>libgpkg/gpkg/error.c</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>56B172F11D146B9A00BD0BBF</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>error.h</string>
+			<key>path</key>
+			<string>libgpkg/gpkg/error.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>56B172F21D146B9A00BD0BBF</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.c</string>
+			<key>name</key>
+			<string>fp.c</string>
+			<key>path</key>
+			<string>libgpkg/gpkg/fp.c</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>56B172F31D146B9A00BD0BBF</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>fp.h</string>
+			<key>path</key>
+			<string>libgpkg/gpkg/fp.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>56B172F41D146B9A00BD0BBF</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>geom_func.h</string>
+			<key>path</key>
+			<string>libgpkg/gpkg/geom_func.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>56B172F51D146B9A00BD0BBF</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.c</string>
+			<key>name</key>
+			<string>geomio.c</string>
+			<key>path</key>
+			<string>libgpkg/gpkg/geomio.c</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>56B172F61D146B9A00BD0BBF</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>geomio.h</string>
+			<key>path</key>
+			<string>libgpkg/gpkg/geomio.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>56B172FD1D146B9A00BD0BBF</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.c</string>
+			<key>name</key>
+			<string>gpkg_db.c</string>
+			<key>path</key>
+			<string>libgpkg/gpkg/gpkg_db.c</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>56B172FE1D146B9A00BD0BBF</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.c</string>
+			<key>name</key>
+			<string>gpkg_geom.c</string>
+			<key>path</key>
+			<string>libgpkg/gpkg/gpkg_geom.c</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>56B172FF1D146B9A00BD0BBF</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>gpkg_geom.h</string>
+			<key>path</key>
+			<string>libgpkg/gpkg/gpkg_geom.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>56B173001D146B9A00BD0BBF</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.c</string>
+			<key>name</key>
+			<string>gpkg.c</string>
+			<key>path</key>
+			<string>libgpkg/gpkg/gpkg.c</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>56B173011D146B9A00BD0BBF</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>gpkg.h</string>
+			<key>path</key>
+			<string>libgpkg/gpkg/gpkg.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>56B173021D146B9A00BD0BBF</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.c</string>
+			<key>name</key>
+			<string>i18n.c</string>
+			<key>path</key>
+			<string>libgpkg/gpkg/i18n.c</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>56B173031D146B9A00BD0BBF</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>i18n.h</string>
+			<key>path</key>
+			<string>libgpkg/gpkg/i18n.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>56B173041D146B9A00BD0BBF</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>spatialdb_internal.h</string>
+			<key>path</key>
+			<string>libgpkg/gpkg/spatialdb_internal.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>56B173051D146B9A00BD0BBF</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.c</string>
+			<key>name</key>
+			<string>spatialdb.c</string>
+			<key>path</key>
+			<string>libgpkg/gpkg/spatialdb.c</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>56B173061D146B9A00BD0BBF</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>spatialdb.h</string>
+			<key>path</key>
+			<string>libgpkg/gpkg/spatialdb.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>56B173071D146B9A00BD0BBF</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.c</string>
+			<key>name</key>
+			<string>spl_db.c</string>
+			<key>path</key>
+			<string>libgpkg/gpkg/spl_db.c</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>56B173081D146B9A00BD0BBF</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.c</string>
+			<key>name</key>
+			<string>spl_geom.c</string>
+			<key>path</key>
+			<string>libgpkg/gpkg/spl_geom.c</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>56B173091D146B9A00BD0BBF</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>spl_geom.h</string>
+			<key>path</key>
+			<string>libgpkg/gpkg/spl_geom.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>56B1730A1D146B9A00BD0BBF</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.c</string>
+			<key>name</key>
+			<string>sql.c</string>
+			<key>path</key>
+			<string>libgpkg/gpkg/sql.c</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>56B1730B1D146B9A00BD0BBF</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>sql.h</string>
+			<key>path</key>
+			<string>libgpkg/gpkg/sql.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>56B1730C1D146B9A00BD0BBF</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>sqlite.h</string>
+			<key>path</key>
+			<string>libgpkg/gpkg/sqlite.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>56B1730D1D146B9A00BD0BBF</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.c</string>
+			<key>name</key>
+			<string>strbuf.c</string>
+			<key>path</key>
+			<string>libgpkg/gpkg/strbuf.c</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>56B1730E1D146B9A00BD0BBF</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>strbuf.h</string>
+			<key>path</key>
+			<string>libgpkg/gpkg/strbuf.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>56B1730F1D146B9A00BD0BBF</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>tls.h</string>
+			<key>path</key>
+			<string>libgpkg/gpkg/tls.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>56B173101D146B9A00BD0BBF</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.c</string>
+			<key>name</key>
+			<string>wkb.c</string>
+			<key>path</key>
+			<string>libgpkg/gpkg/wkb.c</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>56B173111D146B9A00BD0BBF</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>wkb.h</string>
+			<key>path</key>
+			<string>libgpkg/gpkg/wkb.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>56B173121D146B9A00BD0BBF</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.c</string>
+			<key>name</key>
+			<string>wkt.c</string>
+			<key>path</key>
+			<string>libgpkg/gpkg/wkt.c</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>56B173131D146B9A00BD0BBF</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>wkt.h</string>
+			<key>path</key>
+			<string>libgpkg/gpkg/wkt.h</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>56B173141D146B9A00BD0BBF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>56B172EF1D146B9A00BD0BBF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>56B173151D146B9A00BD0BBF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>56B172F01D146B9A00BD0BBF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>56B173161D146B9A00BD0BBF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>56B172F11D146B9A00BD0BBF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>56B173171D146B9A00BD0BBF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>56B172F21D146B9A00BD0BBF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>56B173181D146B9A00BD0BBF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>56B172F31D146B9A00BD0BBF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>56B173191D146B9A00BD0BBF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>56B172F41D146B9A00BD0BBF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>56B1731A1D146B9A00BD0BBF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>56B172F51D146B9A00BD0BBF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>56B1731B1D146B9A00BD0BBF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>56B172F61D146B9A00BD0BBF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>56B173221D146B9A00BD0BBF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>56B172FD1D146B9A00BD0BBF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>56B173231D146B9A00BD0BBF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>56B172FE1D146B9A00BD0BBF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>56B173241D146B9A00BD0BBF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>56B172FF1D146B9A00BD0BBF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>56B173251D146B9A00BD0BBF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>56B173001D146B9A00BD0BBF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>56B173261D146B9A00BD0BBF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>56B173011D146B9A00BD0BBF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>56B173271D146B9A00BD0BBF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>56B173021D146B9A00BD0BBF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>56B173281D146B9A00BD0BBF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>56B173031D146B9A00BD0BBF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>56B173291D146B9A00BD0BBF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>56B173041D146B9A00BD0BBF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>56B1732A1D146B9A00BD0BBF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>56B173051D146B9A00BD0BBF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>56B1732B1D146B9A00BD0BBF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>56B173061D146B9A00BD0BBF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>56B1732C1D146B9A00BD0BBF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>56B173071D146B9A00BD0BBF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>56B1732D1D146B9A00BD0BBF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>56B173081D146B9A00BD0BBF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>56B1732E1D146B9A00BD0BBF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>56B173091D146B9A00BD0BBF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>56B1732F1D146B9A00BD0BBF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>56B1730A1D146B9A00BD0BBF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>56B173301D146B9A00BD0BBF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>56B1730B1D146B9A00BD0BBF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>56B173311D146B9A00BD0BBF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>56B1730C1D146B9A00BD0BBF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>56B173321D146B9A00BD0BBF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>56B1730D1D146B9A00BD0BBF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>56B173331D146B9A00BD0BBF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>56B1730E1D146B9A00BD0BBF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>56B173341D146B9A00BD0BBF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>56B1730F1D146B9A00BD0BBF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>56B173351D146B9A00BD0BBF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>56B173101D146B9A00BD0BBF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>56B173361D146B9A00BD0BBF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>56B173111D146B9A00BD0BBF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>56B173371D146B9A00BD0BBF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>56B173121D146B9A00BD0BBF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>56B173381D146B9A00BD0BBF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>56B173131D146B9A00BD0BBF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>56084F0D1C9A435A0020CDA4</string>
+</dict>
+</plist>
